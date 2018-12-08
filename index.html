@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/night.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -22,12 +22,123 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+		<div class="reveal"> 
+<div class="slides"> 
+<section>DOM</section>
+<section>
+<section>An example of DOM</section> 
+
+<section> 
+<pre> 
+<code> 
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;About elk&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  The truth about elk
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code> 
+</pre> 
+</section>
+<section>
+<DIV class="domtree"><svg xmlns="http://www.w3.org/2000/svg" width="690" height="350"><g transform="translate(20 30)"><path class="link" style="fill: none; stroke: #bec3c7; stroke-width: 1px;" d="M 7 0 L 7 30 L 40.3333 30" /><path class="link" style="fill: none; stroke: #bec3c7; stroke-width: 1px;" d="M 7 0 L 7 180 L 40.3333 180" /><path class="link" style="fill: none; stroke: #bec3c7; stroke-width: 1px;" d="M 7 0 L 7 210 L 40.3333 210" /><path class="link" style="fill: none; stroke: #bec3c7; stroke-width: 1px;" d="M 40.3333 30 L 40.3333 60 L 73.6667 60" /><path class="link" style="fill: none; stroke: #bec3c7; stroke-width: 1px;" d="M 40.3333 30 L 40.3333 90 L 73.6667 90" /><path class="link" style="fill: none; stroke: #bec3c7; stroke-width: 1px;" d="M 40.3333 30 L 40.3333 150 L 73.6667 150" /><path class="link" style="fill: none; stroke: #bec3c7; stroke-width: 1px;" d="M 73.6667 90 L 73.6667 120 L 107 120" /><path class="link" style="fill: none; stroke: #bec3c7; stroke-width: 1px;" d="M 40.3333 210 L 40.3333 240 L 73.6667 240" /><g class="node" style="opacity: 1;" transform=""><rect style="cursor: pointer; fill: #cee0f4;" x="-5" y="-12.5" width="250" height="25" rx="4" ry="4" /><text style="fill: black; pointer-events: none;" dx="3.5" dy="4.5">▾ </text><text style="font: 14px Consolas,monospace; font-size-adjust: none; font-stretch: normal; fill: #333; pointer-events: none;" dx="16.5" dy="4.5">HTML</text></g><g class="node" style="opacity: 1;" transform="translate(33.3333 30)"><rect style="cursor: pointer; fill: #cee0f4;" x="-5" y="-12.5" width="250" height="25" rx="4" ry="4" /><text style="fill: black; pointer-events: none;" dx="3.5" dy="4.5">▾ </text><text style="font: 14px Consolas,monospace; font-size-adjust: none; font-stretch: normal; fill: #333; pointer-events: none;" dx="16.5" dy="4.5">HEAD</text></g><g class="node" style="opacity: 1;" transform="translate(66.6667 60)"><rect style="cursor: pointer; fill: #ffde99;" x="-5" y="-12.5" width="250" height="25" rx="4" ry="4" /><text style="fill: black; pointer-events: none;" dx="3.5" dy="4.5" /><text style="font: 14px Consolas,monospace; font-size-adjust: none; font-stretch: normal; fill: #333; pointer-events: none;" dx="5.5" dy="4.5">#text ↵␣␣</text></g><g class="node" style="opacity: 1;" transform="translate(66.6667 90)"><rect style="cursor: pointer; fill: #cee0f4;" x="-5" y="-12.5" width="250" height="25" rx="4" ry="4" /><text style="fill: black; pointer-events: none;" dx="3.5" dy="4.5">▾ </text><text style="font: 14px Consolas,monospace; font-size-adjust: none; font-stretch: normal; fill: #333; pointer-events: none;" dx="16.5" dy="4.5">TITLE</text></g><g class="node" style="opacity: 1;" transform="translate(66.6667 150)"><rect style="cursor: pointer; fill: #ffde99;" x="-5" y="-12.5" width="250" height="25" rx="4" ry="4" /><text style="fill: black; pointer-events: none;" dx="3.5" dy="4.5" /><text style="font: 14px Consolas,monospace; font-size-adjust: none; font-stretch: normal; fill: #333; pointer-events: none;" dx="5.5" dy="4.5">#text ↵</text></g><g class="node" style="opacity: 1;" transform="translate(33.3333 180)"><rect style="cursor: pointer; fill: #ffde99;" x="-5" y="-12.5" width="250" height="25" rx="4" ry="4" /><text style="fill: black; pointer-events: none;" dx="3.5" dy="4.5" /><text style="font: 14px Consolas,monospace; font-size-adjust: none; font-stretch: normal; fill: #333; pointer-events: none;" dx="5.5" dy="4.5">#text ↵</text></g><g class="node" style="opacity: 1;" transform="translate(33.3333 210)"><rect style="cursor: pointer; fill: #cee0f4;" x="-5" y="-12.5" width="250" height="25" rx="4" ry="4" /><text style="fill: black; pointer-events: none;" dx="3.5" dy="4.5">▾ </text><text style="font: 14px Consolas,monospace; font-size-adjust: none; font-stretch: normal; fill: #333; pointer-events: none;" dx="16.5" dy="4.5">BODY</text></g><g class="node" style="opacity: 1;" transform="translate(100 120)"><rect style="cursor: pointer; fill: #ffde99;" x="-5" y="-12.5" width="250" height="25" rx="4" ry="4" /><text style="fill: black; pointer-events: none;" dx="3.5" dy="4.5" /><text style="font: 14px Consolas,monospace; font-size-adjust: none; font-stretch: normal; fill: #333; pointer-events: none;" dx="5.5" dy="4.5">#text About elk</text></g><g class="node" style="opacity: 1;" transform="translate(66.6667 240)"><rect style="cursor: pointer; fill: #ffde99;" x="-5" y="-12.5" width="250" height="25" rx="4" ry="4" /><text style="fill: black; pointer-events: none;" dx="3.5" dy="4.5" /><text style="font: 14px Consolas,monospace; font-size-adjust: none; font-stretch: normal; fill: #333; pointer-events: none;" dx="5.5" dy="4.5">#text 
+	The truth about elk
+</text></g></g></svg></DIV>
+</section> 
+</section>
+<section> 
+<section>Walking the DOM</section> 
+<section><img src="dom-links@2x[1].png" style="height:15em" alt="navigation"/></section> 
+<section>On top: documentElement and body</section>
+<section>
+<pre> 
+<code> 
+	&lt;html&gt; = document.documentElement
+	&lt;body&gt; = document.body
+	&lt;head&gt; = document.head
+</code> 
+</pre>
+</section>
+<section><img src="dom-links-elements@2x[1].png" style="height:15em" alt="navigation"/></section>
+<section>
+	<pre> 
+<code> 
+&lt;html&gt;
+  &lt;body&gt;
+	&lt;div&gt;Begin&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Information&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;End&lt;/div&gt;
+    &lt;script&gt;
+      for (let elem of document.body.children) {
+        alert(elem); // DIV, UL, DIV, SCRIPT
+      }
+    &lt;/script&gt;
+  ...
+  &lt;/body&gt;
+&lt;/html&gt;
+</code> 
+</pre> 
+</section> 
+</section>
+<section>
+<section>Searching: getElement* and querySelector*</section>
+<section>
+<pre> 
+<code> 
+	&lt;div id="elem"&gt;
+	&lt;div id="elem-content"&gt;Element&lt;/div&gt;
+	&lt;/div&gt;
+
+    &lt;script&gt;
+      let elem = document.getElementById('elem');
+    &lt;/script&gt;
+</code> 
+</pre> 
+</section> 
+</section>
+<section>
+	<section>DOM node classes</section>
+	<section><img src="dom-class-hierarchy@2x[1].png" style="height:15em" alt="navigation"/></section>
+	</section>
+	<section>
+	<section>Modifying the document</section> 
+	<section>Creating an element</section> 
+	<section>
+<pre> 
+<code> 
+	let div = document.createElement('div');
+	let textNode = document.createTextNode('Here I am');
+</code> 
+</pre> 
+</section>
+<section>Creating the message</section> 
+	<section>
+<pre> 
+<code> 
+	let div = document.createElement('div');
+div.className = "alert alert-success";
+div.innerHTML = " &lt;strong &gt;Hi there! &lt;/strong &gt; You've read an important message.";
+
+</code> 
+</pre> 
+</section>
+<section>Insertion methods</section> 
+	<section>
+<pre> 
+<code> 
+	parentElem.appendChild(node);
+</code> 
+</pre> 
+</section>
+</section>
+	<section>Event Loop</section>
+
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
